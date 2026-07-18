@@ -7,7 +7,7 @@ function EmployeeEdit() {
   const navigate = useNavigate();
 
   const [employee, setEmployee] = useState({
-    empId: "",
+    Id: "",
     name: "",
     department: "",
     salary: "",
@@ -31,7 +31,7 @@ function EmployeeEdit() {
     event.preventDefault();
 
     try {
-      const response = await fetch(`https://node-vercel-postgress-beige.vercel.app/employees/${empId}`, {
+      const response = await fetch(`https://node-vercel-postgress-beige.vercel.app/employees/${Id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -55,9 +55,9 @@ function EmployeeEdit() {
           <label htmlFor="empId">Employee ID</label>
           <input
             type="text"
-            id="empId"
-            name="empId"
-            value={employee.empId}
+            id="Id"
+            name="Id"
+            value={employee.Id}
             readOnly
           />
         </div>
