@@ -14,10 +14,10 @@ function EmployeeEdit() {
   });
 
   useEffect(() => {
-    fetch(`https://node-vercel-postgress-beige.vercel.app/employees/${empId}`)
+    fetch(`https://node-vercel-postgress-beige.vercel.app/employees/${Id}`)
       .then((response) => response.json())
       .then((data) => setEmployee(data));
-  }, [empId]);
+  }, [Id]);
 
   const handleChange = (event) => {
     const { name, value } = event.target;
