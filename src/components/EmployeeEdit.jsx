@@ -52,7 +52,7 @@ function EmployeeEdit() {
       <h1>Edit Employee</h1>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
-          <label htmlFor="empId">Employee ID</label>
+          <label htmlFor="Id">Employee ID</label>
           <input
             type="text"
             id="Id"
